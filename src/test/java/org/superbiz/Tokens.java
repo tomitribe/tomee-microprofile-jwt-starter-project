@@ -76,7 +76,7 @@ public class Tokens {
         return pem.trim();
     }
 
-    static String asToken(final String claims) throws Exception {
+    public static String asToken(final String claims) throws Exception {
         final PrivateKey pk = readPrivateKey("/testkey.pem");
 
         try {
