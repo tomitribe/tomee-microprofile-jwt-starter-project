@@ -27,7 +27,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tomee.version>8.0.0-M3</tomee.version>
+    <tomee.version>8.0.0</tomee.version>
     <version.shrinkwrap.resolver>2.0.0</version.shrinkwrap.resolver>
     <mp-jwt.version>1.1</mp-jwt.version>
   </properties>
@@ -204,4 +204,18 @@
       <url>file://${basedir}/target/snapshot-repo/</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>tomee-8-final</id>
+      <name>Staged TomEE 8 final release candidate</name>
+      <url>https://repository.apache.org/content/repositories/orgapachetomee-1147/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
