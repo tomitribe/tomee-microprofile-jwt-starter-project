@@ -214,13 +214,27 @@
   <repositories>
     <repository>
       <id>8.0.0-staging</id>
+      <name>Staged TomEE 8 final release candidate</name>
       <url>https://repository.apache.org/content/repositories/orgapachetomee-1147/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>8.0.0-plugin-staging</id>
+      <name>Staged TomEE 8 final release candidate</name>
       <url>https://repository.apache.org/content/repositories/orgapachetomee-1147/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
     </pluginRepository>
   </pluginRepositories>
 </project>
