@@ -34,7 +34,7 @@
 
   <build>
     <defaultGoal>install</defaultGoal>
-    <finalName>bookstore</finalName>
+    <finalName>moviestore</finalName>
 
     <plugins>
 
