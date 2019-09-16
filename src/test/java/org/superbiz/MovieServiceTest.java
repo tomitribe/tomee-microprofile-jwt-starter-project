@@ -40,7 +40,9 @@ public class MovieServiceTest {
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class, "test.war")
                 .addPackages(true, Api.class.getPackage())
-                .addAsResource("META-INF/microprofile-config.properties");
+                .addAsResource("META-INF/microprofile-config.properties")
+                .addAsResource("testkey.pub")
+                ;
     }
 
     @ArquillianResource
