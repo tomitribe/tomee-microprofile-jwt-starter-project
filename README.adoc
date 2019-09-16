@@ -2,7 +2,8 @@
 
 This incredibly small starter project is focused on the minimum project structure one would need in the real world to use MicroProfile JWT.
 
-With MicroProfile JWT, the implementation provides all JWT verification libraries. Our only job as a developer wishing to use MicroProfile JWT is to tell the implementation how to get the RSA public key of the JWT creator for verification purposes.
+With MicroProfile JWT, the implementation provides all JWT verification libraries.
+Our only job as a developer wishing to use MicroProfile JWT is to tell the implementation how to get the RSA public key of the JWT creator for verification purposes.
 
 Under the `src/main` we have the following files that would be required to run MicroProfile JWT in production.
 
