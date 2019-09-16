@@ -17,7 +17,7 @@
 package org.superbiz;
 
 import javax.annotation.security.RolesAllowed;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -32,7 +32,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Path("/movies")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@RequestScoped
+@ApplicationScoped
 public class MovieService {
 
     private Map<Integer, Movie> store = new ConcurrentHashMap<>();
